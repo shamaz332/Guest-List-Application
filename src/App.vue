@@ -43,6 +43,7 @@
               </div>
               <div>
                 <h4>No names added yet...</h4>
+                {{guestName}}
               </div>
             </div>
           </div>
@@ -72,7 +73,9 @@ data: ()=>({
   {
 
     submittedForm:  function(){
-      console.log("j")
+
+      this.guestName.push(this.newNameText)
+
     }
   }
 }
